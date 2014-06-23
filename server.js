@@ -32,3 +32,5 @@ conn.once('open', function() {
 
 // Expose app
 exports = module.exports = app;
+
+console.log("hello");

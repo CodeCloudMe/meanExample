@@ -31,4 +31,7 @@ exports.render = function(req, res) {
         isAdmin: isAdmin,
         adminEnabled: isAdmin() && mean.moduleEnabled('mean-admin')
     });
+
+    console.log("index.js");
+    
 };
