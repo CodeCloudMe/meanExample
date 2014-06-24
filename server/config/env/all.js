@@ -2,11 +2,14 @@
 
 var path = require('path');
 var rootPath = path.normalize(__dirname + '/../../..');
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 3000
+//8080 openstack... 3000 local
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 
 module.exports = {
 	root: rootPath,
-	port: process.env.PORT || 3000,
-	hostname: process.env.HOST || process.env.HOSTNAME,
+	port: server_port,
+	hostname: server_ip_address,
 	db: process.env.MONGOHQ_URL,
 	templateEngine: 'swig',
 

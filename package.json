@@ -5,6 +5,7 @@
   "private": false,
   "author": "Linnovate <mean@linnovate.net>",
   "contributors": [
+  { "name": "Mike De'Shazer", "mail": "m@codecloud.me" },
     { "name": "Lior Kesos", "mail": "lior@linnovate.net" },
     { "name": "Yonatan Ellman", "mail": "yonatan@linnovate.net" },
     { "name": "Ehud Shahak", "mail": "ehud@linnovate.net" },
@@ -14,7 +15,7 @@
   "mean": "0.3.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/mean.git"
+    "url": "https://github.com/CodeCloudMe/meanExample.git"
   },
   "engines": {
     "node": "0.10.x",
