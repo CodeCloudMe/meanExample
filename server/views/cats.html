@@ -1,0 +1,16 @@
+
+    <section data-ui-view ></section>
+    <script type="text/javascript">
+        window.user = {{user|json|safe}};        
+        window.modules = {{modules|json|safe}}; 
+		window.cats={{name|json|safe}}
+		document.write(JSON.stringify(cats));
+    </script>
+
+
+ {% if adminEnabled %} 
+
+    <section class="admin-menu">
+        <div data-ng-include="'/mean-admin/views/index.html'">hi there!</div>
+    </section>
+    {% endif %}
